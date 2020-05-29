@@ -1,12 +1,10 @@
 package foo;
 
-import org.hamcrest.Matcher;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class FooTest {
 
@@ -35,7 +33,7 @@ public class FooTest {
     @Test
     public void test_main()  {
         Foo.main(null);
-        assertEquals("unknown", Foo.storedValue);
-//        assertNull( Foo.storedNullValue);
+        assertEquals("unknown", Foo.storedValueTest1);
+        assertEquals("unknown", Foo.storedValueTest2);
     }
 }

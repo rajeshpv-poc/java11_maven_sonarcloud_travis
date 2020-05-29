@@ -1,5 +1,7 @@
 package foo;
 
+import java.util.Optional;
+
 /**
  * Foo class
  */
@@ -7,8 +9,8 @@ public class Foo {
 
     private Foo(){}
 
-    static String storedValue = null;
-//    static String storedNullValue = null;
+    static String storedValueTest1 = null;
+    static String storedValueTest2 = null;
 
     public static int div(int a, int b) throws WrongOperation {
     	if (b == 0) {
@@ -22,16 +24,17 @@ public class Foo {
 
         // test-1
         if (model.getWithValue().isPresent()){
-            storedValue = model.getWithValue().get();
-            System.out.println("This WILL print:: storedValue=" + storedValue);
+            storedValueTest1 = model.getWithValue().get();
+            System.out.println("This WILL print:: storedValueTest1=" + storedValueTest1);
         }
 
-        /*
+
         // test-2
-        if (model.getWithoutValue().isPresent()){
-            storedNullValue = model.getWithoutValue().get();
-            System.out.println("THis will NOT print:: storedNullValue=" + storedNullValue);
-        }*/
+        Optional<String> optString = model.getWithValue();
+        if (optString.isPresent()){
+            storedValueTest2 = optString.get();
+            System.out.println("This WILL print:: storedValueTest2=" + storedValueTest2);
+        }
     }
 
 }
