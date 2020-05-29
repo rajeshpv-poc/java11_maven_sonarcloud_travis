@@ -14,13 +14,13 @@ public class FooTest {
     public ExpectedException exceptionRule = ExpectedException.none();
 
     @Test
-    public void testAdd_without_exception() throws Throwable {
+    public void testAdd_without_exception() throws Exception {
         assertEquals(2, Foo.div(10, 5));
     }
 
     @Test
-    public void testAdd_with_exception() throws Throwable {
-        exceptionRule.expect(Throwable.class);
+    public void testAdd_with_exception() throws Exception {
+        exceptionRule.expect(WrongOperation.class);
         exceptionRule.expectMessage("Can't divide by zero!");
         Foo.div(10, 0);
     }
