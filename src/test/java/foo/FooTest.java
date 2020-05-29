@@ -5,9 +5,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.*;
+
 public class FooTest {
 
     @Rule
@@ -30,5 +30,12 @@ public class FooTest {
         exceptionRule.expect(WrongOperation.class);
         exceptionRule.expectMessage("Wrong Operation");
         throw new WrongOperation();
+    }
+
+    @Test
+    public void test_main()  {
+        Foo.main(null);
+        assertEquals("unknown", Foo.storedValue);
+//        assertNull( Foo.storedNullValue);
     }
 }
