@@ -7,4 +7,4 @@ addons:
       secure: "QBkNb1aJONTO7RoMlbR9HoXZxcJyrz06CspYB+kcY09BLr0j5LuTVmzrnxRKZ8pV78QbFQOnFSEJJHM9jCPznrz2yzo0kVoqa/KQTp8rSTgdMLXD4iDBNiU68FqgtXMWOS607S2dzlvDQc6xY60DhswEENL2jof9QQAC+xwcLtE+1jLChFRirbHWfamzeBzxlpZTMEgc4bZ9KKKtNxA6lv5fRRdidwqtCKx7OU7c3Mu++It2jmhOBZbrn+blFNuniBMp3tK3ae2+Wr1gwVTFZyHpQUUGCe+ve5fAVH7Usx/RrfvIzEk4zV9gIXbCaNaM9ZWbkt3B4HX2FBw/0sJo1Tmzv2TTFu8/DzWC2FgN5wbkvpLMUnqRfr9tWGPCrh93xu2sS6zBbG0E98vLaVpllhxtQRzqbFb8o1BITd7UYg5A4HMjWhbsc35zZdc/cvQUkZbBKyzlIMhlpdYzW+/thNpdUl35KiWnwHq0wXw59bj6HgQjNPM44DZnNkyIX1zlq1xZYlgM8O6escMFhD4yjKMyXOmdtJQPXeAzePcpLoOgOH/OnN4DwKZkhvdRRptMRMWiTQPFChSDAjXtIo+MZGH6OWFBnoMg0dmLrHJu3jHOF1eYDC5DJP2A5WEjQ9ZV3dxBaNyX9tPScNVKmVcqC/gEDP2CFJuPIk3Hea13PpA="
 script:
   # - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
-  - mvn clean verify sonar:sonar -Pcoverage -Dsonar.projectKey="rajeshpv-poc java11-maven-travis-project"
+  - mvn clean verify sonar:sonar -Pcoverage
