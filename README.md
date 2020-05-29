@@ -1,6 +1,6 @@
 # Java Maven-based project analyzed on SonarCloud using Travis
 
-[![My Travis Build status](https://travis-ci.org/rajeshpv-poc/java11_maven_sonarcloud_travis.svg?branch=master)](https://travis-ci.org/rajeshpv-poc/java11_maven_sonarcloud_travis) [![My SonarCloud Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=com.sonarqube.examples%3Ajava-maven-travis-project&metric=alert_status)](https://sonarcloud.io/dashboard/index/com.sonarqube.examples:java-maven-travis-project)
+[![My Travis Build status](https://travis-ci.org/rajeshpv-poc/java11_maven_sonarcloud_travis.svg?branch=master)](https://travis-ci.org/rajeshpv-poc/java11_maven_sonarcloud_travis) [![My SonarCloud Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=com.sonarqube.examples%3Ajava11-maven-travis-project&metric=alert_status)](https://sonarcloud.io/dashboard/index/com.sonarqube.examples:java11-maven-travis-project)
 
 #### This project is analysed on [SonarCloud](https://sonarcloud.io/dashboard/index/com.sonarqube.examples:java-maven-travis-project)!
 
@@ -11,4 +11,6 @@ You simply have to do 2 things in your `.travis.yml` file:
 
 You can take a look at the [.travis.yml file](https://github.com/SonarSource/sq-com_example_java-maven-travis/blob/master/.travis.yml)
 of this project to see it in practice.
-https://travis-ci.org/rajeshpv-poc/java11_maven_sonarcloud_travis.svg?branch=master&status=started
+
+
+
