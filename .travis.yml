@@ -6,7 +6,8 @@ addons:
     token:
       secure: d198f3f0785ead9dd1cc8665785bcb4311501710
 script:
-- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+  # - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+  - mvn clean verify sonar:sonar -Pcoverage
 env:
   global:
     secure: XJ+KxIugs01HQbcOUbBgWKoEg8Tm4skVi+/qnORw5g3y9nskSaNAJMJuikUQj4X0hxf8N1oMbQGEsHn1jBgdqR5o917GibyoK/TwzDM5/UwYqyAHqz7+zh1p8CvVLr/R5wNzwMBYIAdBOGszfvl5K1ISHTk+GM292Z2WZiN6kG6a9fK7GtvJ7wjfLUhgndpM8vcJEVNtQaZT8t3CJ6Q3O5RRM7/Fms3rZD5IjPLP8lvIriivyJ9JnGtYDTlZIQRw3scpVsbuUueYrstGueP0bXFtkk/fLQo7aQJPrQ+DoBWCNU2mUxjn9llk2b/RqhyCwr27O38817JTGLwFm31nCJ5wx5DKg4XGFa5/pRl7mqDmR8OnX5SBcPprv5Z2Oue93lxBGxVBI90Xs/UbZsXwGmEhjquV8dGztQmkp9AVN2NCpUdyx+o0QmzqQrT4Qiv8KQdXLDHaicYEzNDkiPD5BTN238AAkLYed3/UqnIxcMIP7p2UdRMPPjvFjez65n7sUpZuesioZpKgOEVZfSegP9xPMNMvvxBq9FIgx5NEq7JUK8Rn2nAZUh/txd9A4wdDBSRJfzzLFnDtXV6hle6yMil7qWSBHlbiQaCDs+UgR9EXLYH/+k6tQp0h8UF3wuEJzGK2m1pmlryyR8O8BAG+ivFreNiw8rhDHB6cU+kOwHg=
