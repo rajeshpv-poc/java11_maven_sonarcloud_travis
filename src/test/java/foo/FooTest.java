@@ -24,4 +24,11 @@ public class FooTest {
         exceptionRule.expectMessage("Can't divide by zero!");
         Foo.div(10, 0);
     }
+
+    @Test
+    public void test_WronOperation_exception() throws Exception {
+        exceptionRule.expect(WrongOperation.class);
+        exceptionRule.expectMessage("Wrong Operation");
+        throw new WrongOperation();
+    }
 }
