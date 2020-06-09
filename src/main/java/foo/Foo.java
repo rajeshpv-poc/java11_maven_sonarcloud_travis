@@ -20,7 +20,7 @@ public class Foo {
     }
 
     public static void main(String[] args){
-        OptModel model = new OptModel();
+        final OptModel model = new OptModel();
 
         // test-1
         if (model.getWithValue().isPresent()){
@@ -30,7 +30,7 @@ public class Foo {
 
 
         // test-2
-        Optional<String> optString = model.getWithValue();
+        final Optional<String> optString = model.getWithValue();
         if (optString.isPresent()){
             storedValueTest2 = optString.get();
             System.out.println("This WILL print:: storedValueTest2=" + storedValueTest2);
