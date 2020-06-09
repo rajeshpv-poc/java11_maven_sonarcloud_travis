@@ -1,6 +1,8 @@
 package saweb;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import saservice.ChangeStateActionService;
@@ -8,7 +10,8 @@ import saservice.DefaultActionService;
 import saservice.RNIActionDTO;
 
 import java.util.Date;
-
+@Controller
+@RequestMapping("/actions")
 public class SaWebController {
 
     private DefaultActionService actionService = new DefaultActionService();
